@@ -1,0 +1,417 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Pushover Notifications for WordPress\n"
+"POT-Creation-Date: 2013-12-17 06:54-0700\n"
+"PO-Revision-Date: 2013-12-17 07:07-0700\n"
+"Last-Translator: Chris Klosowski <cklosowski@gmail.com>\n"
+"Language-Team: literaturcafe.de <redaktion@literaturcafe.de>\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: _e;__;_;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Bookmarks: -1,-1,7,-1,-1,-1,-1,-1,-1,-1\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: /home/cklosowski/Development/varying-vagrant-vagrants-"
+"debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications\n"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/pushover-notifications.php:95
+msgid "Twice Daily"
+msgstr "Zweimal täglich"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/pushover-notifications.php:152
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/pushover-notifications.php:182
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/pushover-notifications.php:153
+msgid "Visit Pushover"
+msgstr "Pushover besuchen"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/pushover-notifications.php:167
+msgid "Pushover Notifications"
+msgstr "Pushover Benachrichtigungen"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/pushover-notifications.php:178
+msgid "Pushover Notifications for WordPress"
+msgstr "Einstellungen: Pushover-Benachrichtigungen für WordPress"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/pushover-notifications.php:183
+msgid "Logs"
+msgstr "Protokoll"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/pushover-notifications.php:184
+msgid "System Info"
+msgstr "Systeminfo"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/pushover-notifications.php:190
+msgid "Additional Keys"
+msgstr "Weitere Schlüssel"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/pushover-notifications.php:198
+msgid "Licenses"
+msgstr "Lizenzen"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/pushover-notifications.php:202
+msgid "Get Extensions"
+msgstr "Erweiterungen hinzufügen"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/pushover-notifications.php:248
+msgid ""
+"Get Pushover Notifications for your Easy Digital Downloads Sales with the <a "
+"href=\"https://easydigitaldownloads.com/extension/pushover-notifications/?"
+"ref=371\" target=\"_blank\">Pushover Notifications Extension</a>."
+msgstr ""
+"Erhalten Sie Pushover-Benachrichtigungen für Ihre Easy Digital Downloads-"
+"Käufe mit der <a href=\"https://easydigitaldownloads.com/extension/pushover-"
+"notifications/?ref=371\" target=\"_blank\">Pushover Benachrichtigungs-"
+"Erweiterung</a>."
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/pushover-notifications.php:252
+msgid ""
+"Get Pushover Notifications for bbPress with the <a href=\"https://wp-push."
+"com/extensions/bbpress-extension/\" target=\"_blank\">Pushover Notifications "
+"Extension</a>."
+msgstr ""
+"Erhalten Sie Pushover-Benachrichtigungen für bbPress mit der <a href="
+"\"https://wp-push.com/extensions/bbpress-extension/\" target=\"_blank"
+"\">Pushover-Notifications-Erweiterung</a>."
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/notification-functions.php:158
+#, fuzzy
+msgid "Updates Available"
+msgstr "Aktualisierung vorhanden"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/notification-functions.php:161
+msgid "WordPress update available"
+msgstr "WordPress Aktualisierung vorhanden"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/notification-functions.php:165
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/notification-functions.php:168
+#, php-format
+msgid "%d %s updates"
+msgstr "%d %s Aktualisierungen"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/notification-functions.php:189
+msgid "New User"
+msgstr "Neuer Benutzer"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/notification-functions.php:192
+#, php-format
+msgid "%s created an account."
+msgstr "%s hat Account erstellt."
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/notification-functions.php:220
+msgid "pingback"
+msgstr "Pingback"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/notification-functions.php:223
+msgid "trackback"
+msgstr "Trackback"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/notification-functions.php:227
+msgid "comment"
+msgstr "Kommentar"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/notification-functions.php:237
+#, php-format
+msgid "by %1$s on %2$s"
+msgstr "von %1$s zu %2$s"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/notification-functions.php:285
+msgid "Password Reset Request"
+msgstr "Anfrage Passwort zurücksetzen"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/notification-functions.php:286
+msgid ""
+"A password reset request was made for your account. If this was not you "
+"pelase verify your account is secure."
+msgstr ""
+"Jemand hat das Passwort für Ihren Zugang angefordert. Sollten Sie es nicht "
+"selbst gewesen sein, prüfen Sie bitte, ob Ihr Zugang noch sicher ist."
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/notification-functions.php:311
+#, fuzzy
+msgid "New Post"
+msgstr "%s"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/notification-functions.php:316
+msgid " by "
+msgstr "von"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/notification-functions.php:318
+msgid "View Post"
+msgstr "Beitrag ansehen"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:17
+msgid "Application API Token/Key"
+msgstr "Anwendungs-API-Token/Schlüssel"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:17
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:25
+msgid "Available from within your Pushover Account"
+msgstr "Verfügbar in Ihrem Pushover-Account"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:19
+msgid "Enter Application Key"
+msgstr "Applikationsschlüssel eingeben"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:21
+msgid ""
+"To Create an application visit <a href=\"https://pushover.net/apps/clone/"
+"wordpress_plugin\" target=\"_blank\">https://pushover.net/apps/clone/"
+"wordpress_plugin</a>"
+msgstr ""
+"Zum Erstellen einer Anwendung besuchen Sie <a href=\"https://pushover.net/"
+"apps/clone/wordpress_plugin\" target=\"_blank\">https://pushover.net/apps/"
+"clone/wordpress_plugin</a>"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:25
+msgid "Your User Key"
+msgstr "Ihr Benutzerschlüssel (User Key)"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:27
+msgid "Enter User Key"
+msgstr "Benutzerschlüssel eingeben"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:28
+#, php-format
+msgid ""
+"This is the Administrator User Key. Other users can add their keys by "
+"editing their <a href=\"%s\">Profile</a> under the 'Contact Info' Section."
+msgstr ""
+"Dies ist der Zugangsschlüssel des Administrators. Andere Nutzer können ihren "
+"Schlüssel in ihrem <a href=\"%s\">Profile</a> im Bereich 'Kontaktinfo' "
+"eintragen."
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:30
+msgid ""
+"Adding user specific keys allows you to be notified of Password Reset "
+"requests and other user specific notifications."
+msgstr ""
+"Nutzerspezifische Schlüssel erlauben Hinweise bei Passwortanforderungen und "
+"andere nutzerbezogene Meldungen."
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:35
+msgid "Send Notifications For:"
+msgstr "Nachricht senden bei:"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:35
+msgid "What do you want to be notified of?"
+msgstr "Worüber möchten Sie informiert werden?"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:38
+msgid "New Users"
+msgstr "Neuer Benutzer"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:41
+msgid "New Posts are Published"
+msgstr "Neue Beiträge werden veröffentlicht"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:43
+msgid "Roles to Notify"
+msgstr "Rollen zu benachrichtigen"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:52
+msgid "New Comments"
+msgstr "Neuer Kommentar"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:55
+msgid "Notify the Post Author (for multi-author blogs)"
+msgstr "Autor des Beitrags informieren (bei Blogs mit mehreren Autoren)"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:58
+msgid "Notify users when password resets are requested for their accounts?"
+msgstr "Nutzer benachrichtigen, wenn Passwort angefordert wird"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:61
+msgid "WordPress Core Update is Available"
+msgstr "WordPress Kern Aktualisierung vorhanden"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:64
+msgid "Plugin & Theme Updates are Available"
+msgstr "Plugin- & Theme-Aktualisierungen vorhanden"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:71
+msgid "Advanced &amp; Debug Options:"
+msgstr "Weitere Optionen und Fehlerbehebung"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:71
+msgid "With great power, comes great responsiblity."
+msgstr "Mehr Möglichkeiten erfordern mehr Verantwortung."
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:74
+msgid "Use Multiple Application Keys"
+msgstr "Verwende mehrere Applikationsschlüssel"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:75
+msgid ""
+"Allows you to choose what application key alerts get sent from. Useful for "
+"sites that may use all their monthly alerts"
+msgstr ""
+"Erlaubt die Einstellung, über welchen Applikationsschlüssel Nachrichten "
+"verschickt werden. Hilfreich für Sites, die alle monatlichen Nachrichten "
+"benötigen."
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:78
+msgid "Verify SSL from api.pushover.net?"
+msgstr "SSL von api.pushover.net verifizieren?"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:79
+msgid ""
+"Disable if you get API Notification Errors in the logs. Caused when CURL "
+"cannot verify SSL Certificates"
+msgstr ""
+"Deaktivieren, wenn Sie API-Hinweise im Protokoll finden. Wird dadurch "
+"verursacht, dass CURL die SSL-Zertifikate nicht verifizieren kann."
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:82
+msgid "Enable Logging"
+msgstr "Protokoll aktivieren"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:83
+msgid "Enable or Disable Logging"
+msgstr "Aktiviere oder deaktiviere Protokoll"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:94
+msgid "Save Changes"
+msgstr "Änderungen speichern"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:97
+msgid "Not receiving reports?"
+msgstr "Keine Protokolldatei erstellt?"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:99
+msgid ""
+"This feature uses WP-Cron to run. If your site doesn't get much traffic, the "
+"scheduled task to send your reports might not execute at the specified time. "
+"There are 2 options:"
+msgstr ""
+"Benötigt WP-Cron, um ausgeführt zu werden. Hat Ihre Website zu wenig "
+"Besucher, so werden die die Protokolle eventuell nicht zur gewünschten Zeit "
+"erstellt. Es gibt 2 Möglichkeiten:"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:100
+#, php-format
+msgid ""
+"1. You may need to use the <a href=\"%s\" target=\"_blank\">Improved Cron</"
+"a> plugin to help scheduled tasks run."
+msgstr ""
+"1. Sie können das <a href=\"%s\" target=\"_blank\">Improved Cron</a>-Plugin "
+"verwenden, um zeitgesteuerte Aufgaben zu starten."
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:101
+msgid ""
+"2. If you have access to create cron jobs and know how, you can use the "
+"following cron to execute wp-cron.php every hour."
+msgstr ""
+"2. Wenn Sie auf Ihrem Webserver Cronjobs erstellen können, verwenden Sie die "
+"den folgenden Eintrag, um wp-cron.php zu jeder vollen Stunde auszuführen."
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:120
+msgid "Logs Cleared"
+msgstr "Protokolldatei gelöscht"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:127
+msgid "Clear Logs"
+msgstr "Protokolldatei löschen"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:128
+msgid "Logs:"
+msgstr "Protokoll:"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:156
+msgid "Error Retreiving Extensions Feed"
+msgstr "Fehler beim Abruf des Feeds für Erweiterungen"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:189
+msgid "Licenses Saved."
+msgstr "Lizenzdaten gespeichert."
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:204
+msgid "Save Licenses"
+msgstr "Lizenzen sichern"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:300
+msgid "Your server supports fsockopen."
+msgstr "Ihr Server unterstützt fsockopen."
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:300
+msgid "Your server does not support fsockopen."
+msgstr "Ihr Server unterstützt fsockopen nicht."
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:327
+msgid "Application Keys Saved."
+msgstr "Applikationsschlüssel gespeichert."
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:329
+msgid ""
+"One or more of your keys was not saved. Please verify your Name and Key."
+msgstr ""
+"Ein oder mehrere Schlüssel konnten nicht gespeichert werden. Bitte Name und "
+"Schlüssel überprüfen."
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:335
+msgid ""
+"If your site uses more than your alloted API calls per month, you can "
+"specify multiple application keys here to help disperse your requests to the "
+"Pushover API."
+msgstr ""
+"Wenn Ihre Site mehr als die erlaubte Zahl an API-Aufrufen benötigt, können "
+"Sie hier weitere Applikationsschlüssel eintragen, um die Zugriffe auf die "
+"Pushover-API zu verteilen."
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:338
+msgid "Add New Key"
+msgstr "Neuen Schlüssel hinzufügen"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:339
+msgid "Create a New Application"
+msgstr "Neuen Applikationsschlüssel erstellen"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:347
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:355
+msgid "ID"
+msgstr "ID"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:348
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:356
+msgid "Key Name"
+msgstr "Schlüsselname"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:349
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:357
+msgid "Application Key"
+msgstr "Applikationsschlüssel"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:375
+msgid "No additinal keys found"
+msgstr "Keine weiteren Schlüssel gefunden"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:390
+msgid "Save Keys"
+msgstr "Schlüssel speichern"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:426
+#, fuzzy
+msgid "Pushover Notifications Preferences"
+msgstr "Pushover Benachrichtigungen"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:429
+msgid "Notify Me Of &hellip;"
+msgstr "Benachrichtigen Sie mich über"
+
+#: /home/cklosowski/Development/varying-vagrant-vagrants-debug/www/wordpress-trunk/wp-content/plugins/pushover-notifications/includes/admin/admin-pages.php:433
+msgid "New Posts Being Published"
+msgstr "Neue Beiträge veröffentlicht"
+
+#~ msgid "%s"
+#~ msgstr "%s"
+
+#~ msgid "A New User Has Registered"
+#~ msgstr "Neuer Benutzer registriert"
+
+#~ msgid "A New %s has been submitted"
+#~ msgstr "%s "
