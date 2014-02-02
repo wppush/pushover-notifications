@@ -21,7 +21,12 @@ class CKPushoverNotifications {
 	private function __construct() {
 		require_once( CKPN_PATH . '/includes/misc-functions.php' );
 		require_once( CKPN_PATH . '/includes/notification-functions.php' );
+		require_once( CKPN_PATH . '/includes/user-functions.php' );
 		$options = ckpn_get_options();
+
+		// Call the function to setup settings for activation and 'upgrade'
+		register_activation_hook( __FILE__, 'ckpn_activation_hook' );
+		add_action( 'admin_init', 'ckpn_activation_hook' );
 
 		add_action( 'init', array( $this, 'ckpn_loaddomain', ) );
 		add_action( 'cron_schedules', array( $this, 'add_cron_schedule' ) );
@@ -57,17 +62,27 @@ class CKPushoverNotifications {
 			/** User Profile Settings **/
 			add_filter( 'user_contactmethods', 'ckpn_add_contact_item', 10, 1 );			
 
+			add_action( 'personal_options_update', 'ckpn_save_profile_settings', 10, 1 );
+			add_action( 'edit_user_profile_update', 'ckpn_save_profile_settings', 10, 1 );
+
 			if ( $options['new_post'] ) {
 				add_action( 'show_user_profile', 'ckpn_add_profile_settings', 10, 1 );
 				add_action( 'edit_user_profile', 'ckpn_add_profile_settings', 10, 1 );
-				add_action( 'personal_options_update', 'ckpn_save_profile_settings', 10, 1 );
-				add_action( 'edit_user_profile_update', 'ckpn_save_profile_settings', 10, 1 );
+
 			}
 			
 			if ( $options['multiple_keys'] ) {
 				add_action( 'ckpn_register_additional_settings', 'ckpn_register_additional_key_mappings' );
 				add_filter( 'ckpn_settings_page_options', 'ckpn_enable_additional_key_mappings');
 			}
+		}
+
+		if ( is_multisite() ) {
+			// These will work for when users are added from within the site using Pushover.
+			// If the user is added at the site level and Pushover is not Network Activated, it will not add the keys
+			// until the user saves their profile data
+			add_action( 'add_user_to_blog', 'ckpn_multisite_add_user', 10, 3 );
+			add_action( 'remove_user_from_blog', 'ckpn_multisite_remove_user', 10, 3 );
 		}
 	}
 

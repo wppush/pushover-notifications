@@ -52,7 +52,12 @@ function ckpn_save_profile_settings( $user_id ) {
 	if ( !current_user_can( 'edit_user', $user_id ) )
 		return false;
 
-	update_usermeta( $user_id, 'ckpn_user_notify_posts', $_POST['ckpn_user_notify_posts'] );
+	$user_key = $_POST['ckpn_user_key'];
+	ckpn_udpate_user_to_keys_list( $user_id, $user_key );
+
+	$options = ckpn_get_options();
+	if ( $options['new_post'] )
+		update_usermeta( $user_id, 'ckpn_user_notify_posts', $_POST['ckpn_user_notify_posts'] );
 }
 
 function ckpn_wp_dropdown_roles( $selected = false ) {

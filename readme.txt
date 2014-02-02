@@ -2,7 +2,7 @@
 Contributors: cklosows
 Tags: pushover, notifications, push notifications, bbpress, easy digital downloads, mobile, iphone, ios, android
 Requires at least: 3.0
-Tested up to: 3.8
+Tested up to: 3.8.1
 Stable tag: 1.9.2
 Donate link: https://wp-push.com/donations/
 License: GPLv2 or later
@@ -39,6 +39,9 @@ If you have an interest in translating this plugin visit https://wp-push.com/sup
 In version 1.9.2, if you previously had notifications for new posts enabled, you'll need to go in and choose what roles get notifications before any notificaitons for New Posts will be sent out.
 
 == Changelog ==
+= 1.9.3 =
+* NEW/FIX: Setting for a list of all users with Pushover Keys in their profile (helps with performance, thanks Pippin)
+
 = 1.9.2 =
 * NEW: Admin's can now choose which roles get new post notifications. Supports Custom Roles as well.
 * NEW: Link to create an application is prefilled with WordPress App Template (Thanks Superblock team!)

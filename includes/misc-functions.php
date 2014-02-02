@@ -48,6 +48,24 @@ function ckpn_get_option( $setting = NULL ) {
 }
 
 /**
+ * Items to run during activation process and admin_init to verify we're properly configured
+ * @return void
+ */
+function ckpn_activation_hook() {
+	if ( false === get_option( '_ckpn_users_with_keys') ) {
+		$user_keys_array = array();
+		$users = get_users( array( 'fields' => 'ID' ) );
+		foreach ( $users as $user_id ) {
+			$user_key = get_user_meta( $user_id, 'ckpn_user_key', true );
+			if ( !empty( $user_key ) )
+				$user_keys_array[$user_id] = $user_key;
+		}
+
+		add_option( '_ckpn_users_with_keys', $user_keys_array, '', 'no' );
+	}
+}
+
+/**
  * Get the extension licenses that have been added on the filter 'ckpn_licenses_array'
  * @return array The extensions with license options
  */
