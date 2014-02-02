@@ -4,7 +4,9 @@
  * @return array An array of the list of users [id] => key
  */
 function ckpn_get_users_with_keys() {
-	$users_with_keys = ( get_option( '_ckpn_users_with_keys' ) ) ? get_option( '_ckpn_users_with_keys' ) : array();
+	$users_with_keys = get_option( '_ckpn_users_with_keys' );
+	if ( empty( $users_with_keys ) )
+		$users_with_keys = array();
 
 	return apply_filters( 'ckpn_get_users_with_key', $users_with_keys );
 }
@@ -15,7 +17,7 @@ function ckpn_get_users_with_keys() {
  * @param  string/boolean $user_key The user's Pushover API Key
  * @return boolean  If the status was updated successfully
  */
-function ckpn_udpate_user_to_keys_list( $user_id = false, $user_key = false ) {
+function ckpn_update_user_to_keys_list( $user_id = false, $user_key = false ) {
 	if ( false === $user_id || false === $user_key )
 		return;
 
@@ -29,7 +31,7 @@ function ckpn_udpate_user_to_keys_list( $user_id = false, $user_key = false ) {
 		$current_users_with_keys = $new_user + $current_users_with_keys;
 	}
 
-	return update_option( '_ckpn_users_with_keys', apply_filters( 'ckpn_udpate_user_to_keys_list', $current_users_with_keys ) );
+	return update_option( '_ckpn_users_with_keys', apply_filters( 'ckpn_update_user_to_keys_list', $current_users_with_keys ) );
 }
 
 /**

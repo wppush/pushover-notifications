@@ -53,12 +53,13 @@ function ckpn_get_option( $setting = NULL ) {
  */
 function ckpn_activation_hook() {
 	if ( false === get_option( '_ckpn_users_with_keys') ) {
+		global $wpdb;
 		$user_keys_array = array();
-		$users = get_users( array( 'fields' => 'ID' ) );
-		foreach ( $users as $user_id ) {
-			$user_key = get_user_meta( $user_id, 'ckpn_user_key', true );
-			if ( !empty( $user_key ) )
-				$user_keys_array[$user_id] = $user_key;
+		$users = $wpdb->get_results( "SELECT user_id, meta_value FROM $wpdb->usermeta WHERE meta_key = 'ckpn_user_key' AND meta_value != ''", ARRAY_A );
+		foreach ( $users as $user ) {
+			extract( $user );
+			if ( !empty( $meta_value ) )
+				$user_keys_array[$user_id] = $meta_value;
 		}
 
 		add_option( '_ckpn_users_with_keys', $user_keys_array, '', 'no' );
