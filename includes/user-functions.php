@@ -4,9 +4,7 @@
  * @return array An array of the list of users [id] => key
  */
 function ckpn_get_users_with_keys() {
-	$users_with_keys = get_option( '_ckpn_users_with_keys' );
-	if ( empty( $users_with_keys ) )
-		$users_with_keys = array();
+	$users_with_keys = get_option( '_ckpn_users_with_keys', array() );
 
 	return apply_filters( 'ckpn_get_users_with_key', $users_with_keys );
 }

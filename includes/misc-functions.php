@@ -58,7 +58,7 @@ function ckpn_activation_hook() {
 		$users = $wpdb->get_results( "SELECT user_id, meta_value FROM $wpdb->usermeta WHERE meta_key = 'ckpn_user_key' AND meta_value != ''", ARRAY_A );
 		foreach ( $users as $user ) {
 			extract( $user );
-			if ( !empty( $meta_value ) )
+			if ( !empty( trim( $meta_value ) ) )
 				$user_keys_array[$user_id] = $meta_value;
 		}
 
