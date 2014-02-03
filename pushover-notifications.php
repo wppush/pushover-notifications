@@ -3,7 +3,7 @@
 Plugin Name: Pushover Notifications for WordPress
 Plugin URI: http://www.wp-push.com
 Description: Pushover Notifications allows your WordPress blog to send push notifications for events happening on your blog straight to your iOS device with the Pushover app. This plugin is not associated with the Pushover Notifications team or Superblock.
-Version: 1.9.2
+Version: 1.9.3
 Author: Chris Klosowski
 Author URI: http://www.wp-push.com
 License: GPLv2
@@ -11,7 +11,7 @@ License: GPLv2
 
 define( 'CKPN_CORE_TEXT_DOMAIN', 'ckpn' );
 define( 'CKPN_PATH', plugin_dir_path( __FILE__ ) );
-define( 'CKPN_VERSION', '1.9.2' );
+define( 'CKPN_VERSION', '1.9.3' );
 define( 'CKPN_FILE', plugin_basename( __FILE__ ) );
 define( 'CKPN_URL', plugins_url( 'pushover-notifications', 'pushover-notifications.php' ) );
 
