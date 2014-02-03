@@ -350,12 +350,12 @@ function ckpn_post_published( $new_status, $old_status, $post ) {
 		if ( get_user_meta( $post->post_author, 'ckpn_user_key', true ) !== $options['api_key'] )
 			$user_keys = array( $options['api_key'] );
 
+		$users_with_keys = ckpn_get_users_with_keys();
 		// Search the users for their Keys and send the posts
 		foreach ( $users_to_alert as $user ) {
-			$user_key = get_user_meta( $user, 'ckpn_user_key', true );
 			$selected = get_user_meta( $user, 'ckpn_user_notify_posts', true );
-			if ( $user_key && $selected )
-				$user_keys[] = $user_key;
+			if ( $selected && array_key_exists( $user, $users_with_keys ) )
+				$user_keys[] = $users_with_keys[$user];
 		}
 
 		$user_keys = array_unique( $user_keys );
