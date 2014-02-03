@@ -9,6 +9,12 @@ function ckpn_admin_page() {
 	if ( isset( $_GET['settings-updated'] ) && $current['plugin_updates'] == false && $timestamp = wp_next_scheduled( 'ckpn_plugin_update_check' ) ) {
 		wp_unschedule_event( $timestamp, 'ckpn_plugin_update_check' );
 	}
+	if ( empty( $current['new_post_roles'] ) )
+		$current['new_post_roles'] = array();
+
+	foreach ( $roles as $role_id => $role ) {
+		$current['new_post_roles'][$role_id] = isset( $current['new_post_roles'][$role_id] ) ? $current['new_post_roles'][$role_id] : 0;
+	}
 	?>
 	<form method="post" action="options.php">
 		<?php wp_nonce_field( 'ckpn-update-options' ); ?>
