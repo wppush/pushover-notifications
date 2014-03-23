@@ -308,6 +308,8 @@ function ckpn_post_published( $new_status, $old_status, $post ) {
 
 	// Only do this when a post transitions to being published
 	if ( in_array( $post->post_type, $allowed_post_types ) && $new_status == 'publish' && $old_status != 'publish' ) {
+		$user_keys = array();
+		
 		$title = apply_filters( 'ckpn_new_post_title', get_bloginfo( 'name' ) . ': ' . __( 'New Post', CKPN_CORE_TEXT_DOMAIN ) );
 		
 		$author_data = get_userdata( $post->post_author );
