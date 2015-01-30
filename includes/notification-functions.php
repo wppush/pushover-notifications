@@ -169,6 +169,12 @@ function ckpn_plugin_update_checks() {
 	
 	$priority 	 = '1';
 	$url 		 = admin_url( 'update-core.php' );
+
+	// prepend op to open the url in 1Password on iOS
+	if( $options['1password'] ){
+		$url = "op" . $url;
+	}
+
 	$url_title	 = 'Update Now';
 
 	$args = array( 'title' => $title, 'message' => $message, 'priority' => $priority, 'url' => $url, 'url_title' => $url_title );
