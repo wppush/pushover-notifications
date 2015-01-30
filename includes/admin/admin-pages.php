@@ -83,10 +83,14 @@ function ckpn_admin_page() {
 					<input type="checkbox" name="ckpn_pushover_notifications_settings[sslverify]" value="1" <?php checked( $current['sslverify'], '1', true ); ?> /> 
 					<label for="ckpn_pushover_notifications_settings[sslverify]"><?php _e( 'Verify SSL from api.pushover.net?', CKPN_CORE_TEXT_DOMAIN ); ?></label><br />
 					<small><?php _e( 'Disable if you get API Notification Errors in the logs. Caused when CURL cannot verify SSL Certificates', CKPN_CORE_TEXT_DOMAIN ); ?></small><br />
-					
+
 					<input type="checkbox" name="ckpn_pushover_notifications_settings[logging]" value="1" <?php checked( $current['logging'], '1', true ); ?> /> 
 					<label for="ckpn_pushover_notifications_settings[logging]"><?php _e( 'Enable Logging', CKPN_CORE_TEXT_DOMAIN ); ?></label><br />
 					<small><?php _e( 'Enable or Disable Logging', CKPN_CORE_TEXT_DOMAIN ); ?></small><br />
+
+					<input type="checkbox" name="ckpn_pushover_notifications_settings[1password]" value="1" <?php checked( $current['1password'], '1', true ); ?> /> 
+					<label for="ckpn_pushover_notifications_settings[1password]"><?php _e( 'Open links in 1Password for iOS', CKPN_CORE_TEXT_DOMAIN ); ?></label><br />
+					<small><?php _e( 'Open lins in 1Password instead of Safari', CKPN_CORE_TEXT_DOMAIN ); ?></small><br />
 				</td>
 			</tr>
 
