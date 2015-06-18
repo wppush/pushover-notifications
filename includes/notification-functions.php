@@ -155,7 +155,8 @@ function ckpn_plugin_update_checks() {
 	if ( empty( $plugin_count ) && empty( $theme_count ) && !$core_update )
 		return false;
 
-	$title 		 = apply_filters( 'ckpn_plugin_update_title', get_bloginfo( 'name' ) . ': ' . __( 'Updates Available', CKPN_CORE_TEXT_DOMAIN ) );
+	$title 		 = get_bloginfo( 'name' ) . ': ' . __( 'Updates Available', CKPN_CORE_TEXT_DOMAIN ) ;
+ $title     = apply_filters( 'ckpn_plugin_update_title', $title );
 
 	$message  	 = '';
 	$core_text   = __( 'WordPress update available', CKPN_CORE_TEXT_DOMAIN );
@@ -186,15 +187,20 @@ function ckpn_plugin_update_checks() {
  */
 function ckpn_user_registration( $user_id ) {
 	$options = ckpn_get_options();
-	$title = apply_filters( 'ckpn_newuser_subject', get_bloginfo( 'name' ) . ': ' . __( 'New User', CKPN_CORE_TEXT_DOMAIN ) , $user_id);
+	$title = get_bloginfo( 'name' ) . ': ' . __( 'New User', CKPN_CORE_TEXT_DOMAIN );
+  $title = apply_filters( 'ckpn_newuser_subject', $title, $user_id);
+
 	
 	$user_data = get_userdata( $user_id );
-	$message = apply_filters( 'ckpn_newuser_message', sprintf( __( '%s created an account.', CKPN_CORE_TEXT_DOMAIN ), $user_data->user_login ), $user_id, $user_data->user_login);
+	$message = sprintf( __( '%s created an account.', CKPN_CORE_TEXT_DOMAIN ) );
+  $message = apply_filters( 'ckpn_newuser_message', $message, $user_id);
 	
 	if ( $title === false || $message === false )
 		return;
 
-	$args = apply_filters( 'ckpn_newuser_args', array( 'title' => $title, 'message' => $message ), $user_id );
+	$args = array( 'title' => $title, 'message' => $message );
+  $args = apply_filters( 'ckpn_newuser_args', $args, $user_id );
+
 
 	if ( $options['multiple_keys'] )
 		$args['token'] = ckpn_get_application_key_by_setting( 'new_user' );
@@ -232,9 +238,13 @@ function ckpn_new_comment( $comment_id ) {
 			break;
 	}
 
-	$title = apply_filters( 'ckpn_newcomment_subject', get_bloginfo( 'name' ) . ': ' . ucfirst( $comment_type ) );
+	$title = get_bloginfo( 'name' ) . ': ' . ucfirst( $comment_type );
+  $title = apply_filters( 'ckpn_newcomment_subject', $title, $comment );
+
 	$post_data = get_post( $comment_data->comment_post_ID );
-	$message = apply_filters( 'ckpn_newcomment_message', sprintf( __( 'by %1$s on %2$s', CKPN_CORE_TEXT_DOMAIN ), $comment_data->comment_author, $post_data->post_title ) );
+	$message = sprintf( __( 'by %1$s on %2$s', CKPN_CORE_TEXT_DOMAIN ) );
+  $message = apply_filters( 'ckpn_newcomment_message', $message, $comment );
+
 
 	// Notify the Admin User
 	$args = array( 'title' => $title, 'message' => $message );
@@ -282,8 +292,11 @@ function ckpn_lost_password_request() {
 		$user_pushover_key = get_user_meta( $user_data->data->ID, 'ckpn_user_key', true );
 		if ( $user_pushover_key != '' ) {
 			$options = ckpn_get_options();
-			$title = apply_filters( 'ckpn_password_request_subject', get_bloginfo( 'name' ) . ': ' . __( 'Password Reset Request', CKPN_CORE_TEXT_DOMAIN ) );
-			$message = apply_filters( 'ckpn_password_request_message', sprintf( __( 'A password reset request was made for your account. If this was not you pelase verify your account is secure.', CKPN_CORE_TEXT_DOMAIN ), $user_data->data->user_login ) );
+			$title = get_bloginfo( 'name' ) . ': ' . __( 'Password Reset Request', CKPN_CORE_TEXT_DOMAIN ) ;
+      $title = apply_filters( 'ckpn_password_request_subject', $title );
+
+			$message = sprintf( __( 'A password reset request was made for your account. If this was not you pelase verify your account is secure.', CKPN_CORE_TEXT_DOMAIN ) );
+      $message = apply_filters( 'ckpn_password_request_message', $message, $user_id);
 
 			$args = array( 'title' => $title, 'message' => $message, 'user' => $user_pushover_key, 'priority' => 1 );
 
@@ -308,12 +321,15 @@ function ckpn_post_published( $new_status, $old_status, $post ) {
 
 	// Only do this when a post transitions to being published
 	if ( in_array( $post->post_type, $allowed_post_types ) && $new_status == 'publish' && $old_status != 'publish' ) {
-		$title = apply_filters( 'ckpn_new_post_title', get_bloginfo( 'name' ) . ': ' . __( 'New Post', CKPN_CORE_TEXT_DOMAIN ) );
+		$title = get_bloginfo( 'name' ) . ': ' . __( 'New Post', CKPN_CORE_TEXT_DOMAIN);
+    $title = apply_filters( 'ckpn_new_post_title', $title, $post );
 		
 		$author_data = get_userdata( $post->post_author );
 		$author_name = $author_data->display_name;
 
-		$message = apply_filters( 'ckpn_new_post_message', get_the_title( $post->ID ) . __( ' by ', CKPN_CORE_TEXT_DOMAIN ) . $author_name );
+		$message = get_the_title( $post->ID ) . __( ' by ', CKPN_CORE_TEXT_DOMAIN ) . $author_name;
+    $message = apply_filters( 'ckpn_new_post_message', $message, $post);
+
 		$url = get_permalink( $post->ID );
 		$url_title = __( 'View Post', CKPN_CORE_TEXT_DOMAIN );
 
