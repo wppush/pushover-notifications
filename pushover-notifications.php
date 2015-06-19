@@ -32,19 +32,19 @@ class CKPushoverNotifications {
 		add_action( 'cron_schedules', array( $this, 'add_cron_schedule' ) );
 		add_action( 'init', array( $this, 'determine_cron_schedule' ) );
 		add_action( 'admin_enqueue_scripts', array( $this, 'load_cusom_js' ) );
-		
+
 		if ( $options['new_user'] ) {
 			add_action( 'user_register', 'ckpn_user_registration' );
 		}
-		
+
 		if ( $options['new_comment'] ) {
 			add_action( 'comment_post', 'ckpn_new_comment' );
 		}
-		
+
 		if ( $options['password_reset'] ) {
 			add_action( 'lostpassword_post', 'ckpn_lost_password_request' );
 		}
-		
+
 		if ( $options['new_post'] ) {
 			add_action( 'transition_post_status', 'ckpn_post_published', 10, 3 );
 		}
@@ -53,14 +53,14 @@ class CKPushoverNotifications {
 			require_once( CKPN_PATH . '/includes/admin/admin-pages.php' );
 			require_once( CKPN_PATH . '/includes/admin/admin-functions.php' );
 			add_action( 'admin_notices', array( $this, 'ckpn_edd_missing_nag' ) );
-			
+
 			/** Settings Pages **/
 			add_action( 'admin_init', array( $this, 'ckpn_register_settings' ), 1000, 0 );
 			add_action( 'admin_menu', array( $this, 'ckpn_setup_admin_menu' ), 1000, 0 );
 			add_filter( 'plugin_action_links', array( $this, 'plugin_settings_links' ), 10, 2 );
-			
+
 			/** User Profile Settings **/
-			add_filter( 'user_contactmethods', 'ckpn_add_contact_item', 10, 1 );			
+			add_filter( 'user_contactmethods', 'ckpn_add_contact_item', 10, 1 );
 
 			add_action( 'personal_options_update', 'ckpn_save_profile_settings', 10, 1 );
 			add_action( 'edit_user_profile_update', 'ckpn_save_profile_settings', 10, 1 );
@@ -70,7 +70,7 @@ class CKPushoverNotifications {
 				add_action( 'edit_user_profile', 'ckpn_add_profile_settings', 10, 1 );
 
 			}
-			
+
 			if ( $options['multiple_keys'] ) {
 				add_action( 'ckpn_register_additional_settings', 'ckpn_register_additional_key_mappings' );
 				add_filter( 'ckpn_settings_page_options', 'ckpn_enable_additional_key_mappings');
@@ -201,7 +201,7 @@ class CKPushoverNotifications {
 
 		// If multiple keys is enabled, show the tab
 		if ( $settings['multiple_keys'] ) {
-			$default_tabs = array_slice( $default_tabs, 0, 1, true ) + 
+			$default_tabs = array_slice( $default_tabs, 0, 1, true ) +
 							array( 'additional_keys' => __( 'Additional Keys', CKPN_CORE_TEXT_DOMAIN ) ) +
 							array_slice( $default_tabs, 1, count( $default_tabs ) -1, true ) ;
 
@@ -258,11 +258,11 @@ class CKPushoverNotifications {
 		if ( !isset($_REQUEST['page'] ) || $_REQUEST['page'] != 'pushover-notifications' )
 			return;
 
-		if ( is_plugin_active( 'easy-digital-downloads/easy-digital-downloads.php' ) && 
+		if ( is_plugin_active( 'easy-digital-downloads/easy-digital-downloads.php' ) &&
 			! is_plugin_active( 'pushover-notifications-edd-ext/pushover-notifications-edd-ext.php' ) ) {
 			printf( '<div class="error"> <p> %s </p> </div>', __( 'Get Pushover Notifications for your Easy Digital Downloads Sales with the <a href="https://easydigitaldownloads.com/extension/pushover-notifications/?ref=371" target="_blank">Pushover Notifications Extension</a>.', CKPN_CORE_TEXT_DOMAIN ) );
 		}
-		if ( is_plugin_active( 'bbpress/bbpress.php' ) && 
+		if ( is_plugin_active( 'bbpress/bbpress.php' ) &&
 			! is_plugin_active( 'pushover-notifications-bbp-ext/pushover-notifications-bbp-ext.php' ) ) {
 			printf( '<div class="error"> <p> %s </p> </div>', __( 'Get Pushover Notifications for bbPress with the <a href="https://wp-push.com/extensions/bbpress-extension/" target="_blank">Pushover Notifications Extension</a>.', CKPN_CORE_TEXT_DOMAIN ) );
 		}
