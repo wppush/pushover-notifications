@@ -261,11 +261,11 @@ function ckpn_new_comment( $comment_id ) {
 	}
 
 	$title = get_bloginfo( 'name' ) . ': ' . ucfirst( $comment_type );
-	$title = apply_filters( 'ckpn_newcomment_subject', $title, $comment_data );
+	$title = apply_filters( 'ckpn_newcomment_subject', $title, $comment_id );
 
 	$post_data = get_post( $comment_data->comment_post_ID );
 	$message   = sprintf( __( 'by %1$s on %2$s', CKPN_CORE_TEXT_DOMAIN ), $comment_data->comment_author, $post_data->post_title );
-	$message   = apply_filters( 'ckpn_newcomment_message', $message, $comment_data );
+	$message   = apply_filters( 'ckpn_newcomment_message', $message, $comment_id );
 
 
 	// Notify the Admin User
@@ -320,7 +320,7 @@ function ckpn_lost_password_request() {
 			$title   = apply_filters( 'ckpn_password_request_subject', $title );
 
 			$message = sprintf( __( 'A password reset request was made for your account. If this was not you pelase verify your account is secure.', CKPN_CORE_TEXT_DOMAIN ) );
-			$message = apply_filters( 'ckpn_password_request_message', $message, $user_id);
+			$message = apply_filters( 'ckpn_password_request_message', $message, $login, $user_data);
 
 			$args = array( 'title' => $title, 'message' => $message, 'user' => $user_pushover_key, 'priority' => 1 );
 
