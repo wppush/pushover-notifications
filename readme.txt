@@ -39,7 +39,10 @@ If you have an interest in translating this plugin visit https://wp-push.com/sup
 In version 1.9.2, if you previously had notifications for new posts enabled, you'll need to go in and choose what roles get notifications before any notificaitons for New Posts will be sent out.
 
 == Changelog ==
-= 1.9.3.1 = 
+= 1.9.4 =
+* TWEAK: Improved filters for the notification process
+
+= 1.9.3.1 =
 * FIX: PHP Warnings on new post notifications if there is no one to notify
 
 = 1.9.3 =
