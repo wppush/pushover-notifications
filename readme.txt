@@ -2,8 +2,8 @@
 Contributors: cklosows
 Tags: pushover, notifications, push notifications, bbpress, easy digital downloads, mobile, iphone, ios, android
 Requires at least: 3.0
-Tested up to: 4.0
-Stable tag: 1.9.3.1
+Tested up to: 4.3.1
+Stable tag: 1.9.4
 Donate link: https://wp-push.com/donations/
 License: GPLv2 or later
 
